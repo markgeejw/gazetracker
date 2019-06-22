@@ -42,7 +42,7 @@ pip install -r requirements.txt
 You can execute training by running the following command:
 
 ```shell
-python train.py --model <MODEL_TO_USE> --data <PATH_TO_PROCESSED_DATASET> --epochs <EPOCHS> [OPTIONS]
+python train.py --model <MODEL_TO_USE> --epochs <EPOCHS> [OPTIONS]
 
 Options:
 --model     Model to use (baseline, improved, seresnet, semobile, mobileift, semobileift)
@@ -51,16 +51,18 @@ Options:
 --weights   Path to weights to be loaded to start training from (optional)
 ```
 
+The model weights will then be saved to the `models/output` folder.
+
 ## Testing
 
 You can test your model using:
 
 ```shell
-python test.py --model <MODEL_TO_USE> --data <PATH_TO_PROCESSED_DATASET> --weights <PATH_TO_WEIGHTS>
+python test.py --model <MODEL_TO_USE> --weights <PATH_TO_WEIGHTS>
 
 Options:
 --model     Model to use (baseline, improved, seresnet, semobile, mobileift, semobileift)
---weights   Path to weights to be loaded to start training from
+--weights   Path to weights to be loaded to evaluate model at
 ```
 
 ## Pre-trained Models
