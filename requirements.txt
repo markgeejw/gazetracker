@@ -58,7 +58,7 @@ prometheus-client==0.6.0
 prompt-toolkit==2.0.9
 protobuf==3.6.1
 ptyprocess==0.6.0
-Pygments==2.3.1
+Pygments==2.7.4
 pykalman==0.9.5
 pymediainfo==4.0
 pyparsing==2.3.0
